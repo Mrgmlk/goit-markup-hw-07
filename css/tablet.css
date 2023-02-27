@@ -1,0 +1,271 @@
+
+@media screen and (min-width: 768px) {
+   .container {
+      width: 736px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .mobile-menu-open {
+      display: none;
+   }
+   .menu-toggle {
+      display: none;
+   }
+}
+
+/**
+  |============================
+  | HEADER Tablet 
+  |============================
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+   .header {
+      border-bottom: 1px solid var(--corner-color);
+   }
+
+   .current {
+      color: var(--accent-color);
+      position: relative;
+   }
+
+   .current::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+   }
+
+   .header-container {
+      display: flex;
+      align-items: center;
+   }
+
+   .header-contacts {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 4px;
+      padding-right: 0;
+      padding-top: 24px;
+      padding-bottom: 10px;
+   }
+
+   .navigation {
+      margin-right: auto;
+   }
+
+   .header-list {
+      display: block;
+      display: flex;
+      gap: 40px;
+      list-style: none;
+      text-decoration: none;
+   }
+
+   .menu-item {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5em;
+      letter-spacing: 0.02em;
+      color: var(--main-font-color);
+   }
+
+   .menu-item,
+   .contact-item {
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .menu-item:hover,
+   .menu-item:focus,
+   .contact-item:hover,
+   .contact-item:focus {
+      color: var(--accent-color);
+   }
+
+   .contact-item {
+      text-decoration: none;
+      color: var(--contact-item-color);
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 1.5em;
+      letter-spacing: 0.02em;
+      margin: 0;
+      padding: 0;
+   }
+}
+
+/**
+  |============================
+  | HERO Tablet
+  |============================
+*/
+
+@media screen and (min-width: 768px) {
+   .hero-title {
+      font-size: 56px;
+      line-height: 1.07;
+      margin-bottom: 40px;
+      width: 494px;
+   }
+}
+
+@media screen and (min-width: 480px) {
+   .hero {
+      background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 70%),
+            rgba(46, 47, 66, 70%)),
+         url('../images/hero/img_tab@1x.jpg');
+   }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+   .hero {
+      background-image: linear-gradient(to right,
+            rgba(46, 47, 66, 70%),
+            rgba(46, 47, 66, 70%)),
+         url('../images/hero/img_tab@2x.jpg');
+   }
+}
+
+/**
+|============================
+| ADVANTAGES Tablet
+|============================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .advantages {
+      padding: 96px 0;
+   }
+   .advantages-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+   }
+   .advantage {
+      width: 340px;
+      height: 120px;
+   }
+   .list-titles{
+      text-align: left;
+   }
+}
+
+/**
+  |============================
+  | PROFESSIONALS Tablet
+  |============================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .professional-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+   }
+   .prof-item:nth-child(1) {
+      margin-bottom: 64px;
+   }
+   .prof-item:nth-child(2) {
+      margin-bottom: 64px;
+   }
+}
+
+/**
+  |============================
+  | CUSTOMERS Mobile
+  |============================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .customers-box {
+      margin-left: auto;
+      margin-right: auto;
+      width: 552px;
+      height: 360px;
+   }
+}
+
+/**
+  |============================
+  | FOOTER Tablet
+  |============================
+*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding-left: 75px;
+   }
+   .input-email {
+      margin-right: 0;
+      margin-bottom: 18px;
+   }
+}
+@media screen and (min-width: 768px) {
+   .input-email {
+      margin-right: 24px;
+   }
+   .footer-subscribe {
+      width: 453px;
+      background-size: cover;
+   }
+   .footer-form {
+      display: flex;
+      height: 40px;
+   }
+}
+
+/**
+  |============================
+  | Buttons Filter / Portfolio
+  |============================
+*/
+
+@media screen and (max-width: 767px) {
+   .button-list {
+      display: flex;
+      flex-wrap: wrap;
+   }
+}
+
+/**
+  |============================
+  | Gallery Tablel / Portfolio
+  |============================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   .gallery-block {
+      width: 746px;
+   }
+}
+   
+@media screen and (max-width: 767px) {
+   .examples-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      width: 360px;
+   }
+}
